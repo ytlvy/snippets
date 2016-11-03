@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>#pragma mark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - LifeCycle
+- (instancetype)initWithPvid:(NSString *)pvid {
+    self = [super init];
+    if (self) {
+        self.pvid = pvid;
+    }
+    return self;
+}
+
+#pragma mark - ViewLifeCycle
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+}
+
+#pragma mark - Layout
+
+
+#pragma mark - IBActions
+
+#pragma mark - Private Interace
+
+#pragma mark - HTTP
+
+#pragma mark - PageJumper
+
+#pragma mark - Properties</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>207E6A44-BB9A-43C7-A804-C2E7EED0F39A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pagemark</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

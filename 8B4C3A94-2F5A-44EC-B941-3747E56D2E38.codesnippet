@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (NSAttributedString *)attributeStringWithInfo:(NSString *)content fontsize:(CGFloat)fontSize color:(UIColor *)color lineHeight:(CGFloat)lineHeight lineSpacing:(CGFloat)lineSpacing{
+    
+    if (!content) {
+        content = @"";
+    }
+    
+    NSMutableAttributedString *labelAttributes = [[NSMutableAttributedString alloc] initWithString:content];
+    
+    //字体大小
+    UIFont *font=[UIFont systemFontOfSize: fontSize];
+    [labelAttributes addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, labelAttributes.length)];
+    
+    //字体间距
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    
+    if (lineSpacing &gt; 0) {
+        paragraphStyle.lineSpacing = lineSpacing;
+    }
+    
+    paragraphStyle.alignment = NSTextAlignmentLeft;
+    
+    if(lineHeight &gt; 0){
+        paragraphStyle.maximumLineHeight = lineHeight;
+        paragraphStyle.minimumLineHeight = lineHeight;
+    }
+    
+    [labelAttributes addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, labelAttributes.length)];
+    [labelAttributes addAttribute:NSForegroundColorAttributeName value:color range:NSMakeRange(0, labelAttributes.length)];
+    
+    return [labelAttributes copy];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8B4C3A94-2F5A-44EC-B941-3747E56D2E38</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>AttributedString</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
