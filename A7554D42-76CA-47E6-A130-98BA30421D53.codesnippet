@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>msgI</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@weakify(self);
+        [[KWSimpleMsgBoxMgr shareMgr] inputBoxWithTitle:@"给作品取个名字吧" text:nil inputTip:@"作品名称" maxlen:20 emoji:NO touchDismiss:NO buttonTitles:@[@"取消", @"确定"] block:^(int clickedButtonIndex, NSString *text) {
+            if(clickedButtonIndex &gt; 1) {
+                @strongify(self);
+                text = [text lrtrim];
+                if (text.length &lt; 1) {
+                    [KuwoToastTipsView showToastTipsAuto:@"作品名字不能为空哦"];
+                }
+                else if([text emo_containsEmoji]) {
+                    [KuwoToastTipsView showToastTipsAuto:@"名字包含表情, 请修改"];
+                }
+                else {
+                    
+                }
+            }
+        }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A7554D42-76CA-47E6-A130-98BA30421D53</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>msgInput</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

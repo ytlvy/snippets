@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>request</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (BOOL) requestCheck {
+    if (![KWKeyConfig IsCurrentNetworkValid]) {
+        [KuwoToastTipsView showToastTipsAuto:@"网络连接异常，请稍后重试"];
+        return NO;
+    }
+    
+    if(![KWLoginHelperViewController checkOnlineOrLogin]) {
+        return NO;
+    }
+    
+    if(![RequestClient cellularEnableNeedUserConfirm:YES]){
+        return NO;
+    }
+    
+    return YES;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B3E265A1-2434-4ADD-810C-89344768E0F1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>requestCheck</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

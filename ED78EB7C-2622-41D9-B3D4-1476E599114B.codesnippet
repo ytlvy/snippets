@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>msgA</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@weakify(self);
+                    [[KWSimpleMsgBoxMgr shareMgr] msgBoxWithTitle:nil message:@"找不" buttonTitles:@[@"取消", @"确定"] touchDismiss:NO block:^(int clickedButtonIndex) {
+                        @strongify(self);
+                        if(clickedButtonIndex &gt; 1) {
+                           
+                        }
+                    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>ED78EB7C-2622-41D9-B3D4-1476E599114B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MsgBoxAsync</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

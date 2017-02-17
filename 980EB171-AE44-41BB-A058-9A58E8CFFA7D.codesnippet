@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cac</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)caculateWidth {
+    LARGE_IMAGE_WIDTH = ScreenWidth() - LEFT_PADDING * 2;
+    MEDIUM_IMAGE_WIDTH = (LARGE_IMAGE_WIDTH - ITEM_HORIZENTOL_SPACING) / 2;
+    LARGE_IMAGE_HEIGHT = [g_deviceConfig GetDeviceRatioCompareWithIPhone6] * 144.0;
+    MEDIUM_IMAGE_HEIGHT = [g_deviceConfig GetDeviceRatioCompareWithIPhone6] * 71.0;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>980EB171-AE44-41BB-A058-9A58E8CFFA7D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>caculate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
