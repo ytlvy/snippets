@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>set</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(void)setKw_preferSize:(NSString *)&lt;#kw_preferSize#&gt; {
+    objc_setAssociatedObject(self, @selector(&lt;#kw_preferSize#&gt;), &lt;#kw_preferSize#&gt;, &lt;#OBJC_ASSOCIATION_RETAIN_NONATOMIC#&gt;);
+}
+
+-(NSString *)&lt;#kw_preferSize#&gt; {
+    return objc_getAssociatedObject(self, @selector(&lt;#kw_preferSize#&gt;));
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FB7597BA-66AA-4BD4-A708-4CBA34295C81</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>assosiate Property</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

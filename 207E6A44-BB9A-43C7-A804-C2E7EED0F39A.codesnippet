@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - LifeCycle
+	<string>pragma mark - LifeCycle
 - (instancetype)initWithPvid:(NSString *)pvid {
     self = [super init];
     if (self) {
@@ -21,7 +21,12 @@
 #pragma mark - ViewLifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupViews];
 
+}
+
+- (void)setupViews {
+    
 }
 
 #pragma mark - Layout

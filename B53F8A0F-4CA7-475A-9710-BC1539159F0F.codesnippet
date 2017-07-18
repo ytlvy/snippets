@@ -3,43 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>#pragma mark</string>
+	<string>ios9Above</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>pragma mark - LifeCycle
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        [self setupViews];
-    }
-    
-    return self;
-}
-
-#pragma mark - GUI
-- (void)setupViews {
-    
-}
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-}
-
-#pragma mark - Public Interface
-- (void)updateWithInfo:(id)info {
-	
-}
-
-
-#pragma mark - Properties</string>
+	<string>if ([[KWDeviceConfig Instance] IsAboveOSVersion:IOS7_VERSION_STRING]) {
+        DeflateRect(&amp;rect, 0, statusBarHeight, 0, 0);
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>02645B13-2E43-4AC8-BFBC-39DA5CB0BAA6</string>
+	<string>B53F8A0F-4CA7-475A-9710-BC1539159F0F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pageMarkView</string>
+	<string>ios9Above</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

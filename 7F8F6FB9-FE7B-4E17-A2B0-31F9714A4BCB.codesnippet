@@ -3,19 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@pr</string>
+	<string>loadSkin</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic, strong)) &lt;#Type#&gt;  &lt;#Var#&gt; </string>
+	<string>- (BOOL) loadSkin:(CSkin *)pSkin {
+    if (pSkin == NULL)
+        return NO;
+    
+    return YES;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EBB14ADF-DC2A-4E22-A55F-E702B760C302</string>
+	<string>7F8F6FB9-FE7B-4E17-A2B0-31F9714A4BCB</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>PropertyStrong</string>
+	<string>loadSkin</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

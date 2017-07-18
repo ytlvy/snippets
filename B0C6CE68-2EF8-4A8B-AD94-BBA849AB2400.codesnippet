@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>dispatch_</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>dispatch_queue_t  queue = dispatch_queue_create("&lt;#queue#&gt;", 0);
+    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    dispatch_source_set_timer(timer, dispatch_walltime(NULL, 0), &lt;#10#&gt;ull * NSEC_PER_SEC, 1ull * NSEC_PER_SEC);
+    
+    dispatch_source_set_event_handler(timer, ^{
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"done on main queue");
+        });
+    });
+
+    dispatch_resume(timer);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B0C6CE68-2EF8-4A8B-AD94-BBA849AB2400</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>DispatchTimer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

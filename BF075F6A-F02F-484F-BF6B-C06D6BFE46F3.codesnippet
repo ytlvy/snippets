@@ -3,43 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>#pragma mark</string>
+	<string>buttonHander</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>pragma mark - LifeCycle
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        [self setupViews];
-    }
+	<string>- (void)&lt;#BtnHander#&gt;:(UIButton *) sender {
     
-    return self;
-}
-
-#pragma mark - GUI
-- (void)setupViews {
-    
-}
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-}
-
-#pragma mark - Public Interface
-- (void)updateWithInfo:(id)info {
-	
-}
-
-
-#pragma mark - Properties</string>
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>02645B13-2E43-4AC8-BFBC-39DA5CB0BAA6</string>
+	<string>BF075F6A-F02F-484F-BF6B-C06D6BFE46F3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pageMarkView</string>
+	<string>btnHandler</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
