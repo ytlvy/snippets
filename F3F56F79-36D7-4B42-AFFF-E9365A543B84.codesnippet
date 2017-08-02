@@ -3,24 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>loadSkin</string>
+	<string>initWithStyle</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (BOOL) loadSkin:(CSkin *)pSkin {
-    if (pSkin == NULL)
-        return NO;
+	<string>- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.width = ScreenWidth();
+        [self setupViews];
+    }
     
-    return YES;
+    return self;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7F8F6FB9-FE7B-4E17-A2B0-31F9714A4BCB</string>
+	<string>F3F56F79-36D7-4B42-AFFF-E9365A543B84</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>loadSkin</string>
+	<string>InitCell</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -6,7 +6,7 @@
 	<string>load</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>- (BOOL)loadSkin:(CSkin *)pSkin {

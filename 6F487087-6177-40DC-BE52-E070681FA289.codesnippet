@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>resetTimer</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>Preprocessor</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void) resetScheduleTimer {
+    
+    if (![self.delegate respondsToSelector:@selector(onScheduleChanged)]) {
+        return;
+    }
+    
+    if ([self isPlaying] &amp;&amp; !_mpTimer) {
+        _mpTimer = [NSTimer timerWithTimeInterval:1.0/PLAYER_SCHEDULE_REFRESH_FREQUNCY target:self selector:@selector(scheduleTimerCallback:) userInfo:nil repeats:YES];
+        
+        [[NSRunLoop mainRunLoop] addTimer:_mpTimer forMode:NSDefaultRunLoopMode];
+    } 
+    else if (_mpTimer != nil) {
+        [_mpTimer invalidate];
+        _mpTimer = nil;
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6F487087-6177-40DC-BE52-E070681FA289</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>resetTimer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
