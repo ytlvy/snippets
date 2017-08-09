@@ -6,10 +6,10 @@
 	<string>shareInstance</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (id)sharedInstance {
+	<string>+ (instancetype)sharedInstance {
     static id s_instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&amp;onceToken, ^{

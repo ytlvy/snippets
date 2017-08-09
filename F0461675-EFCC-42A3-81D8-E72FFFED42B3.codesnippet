@@ -3,38 +3,42 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pointInSide</string>
+	<string>reponderTest</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+	<string>- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"进入A_View---hitTest withEvent ---");
+    UIView * view = [super hitTest:point withEvent:event];
+    NSLog(@"离开A_View--- hitTest withEvent ---hitTestView:%@",view);
+    return view;
+}
+
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     if (self.hidden)
     {
         return [super pointInside:point withEvent:event];
     }
     
-    const UIEdgeInsets hitTestEdgeInsets = UIEdgeInsetsMake(-20, -10, -10, -10);
-    if(UIEdgeInsetsEqualToEdgeInsets(hitTestEdgeInsets, UIEdgeInsetsZero) )
-    {
-        return [super pointInside:point withEvent:event];
-    }
+    const UIEdgeInsets hitTestEdgeInsets = UIEdgeInsetsMake(-20, -10, -10, -500);
     
     CGRect relativeFrame = self.bounds;
     CGRect hitFrame = UIEdgeInsetsInsetRect(relativeFrame, hitTestEdgeInsets);
     
     return CGRectContainsPoint(hitFrame, point);
-}</string>
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>826E6BED-288C-49E4-B75C-F5BB0B1516BF</string>
+	<string>F0461675-EFCC-42A3-81D8-E72FFFED42B3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pointInSide</string>
+	<string>reponderTest</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
