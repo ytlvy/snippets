@@ -2,20 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>Mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#Mark#&gt;</string>
+	<string>[CATransaction begin];
+            [CATransaction setDisableActions:YES];
+            [CATransaction commit];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B5D5EB35-8443-4BAA-828C-34EFA1E47CAF</string>
+	<string>DFE21FBA-430F-46AE-BD2D-16AD6CB3B7EA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>disableTransaction</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Mark</string>
+	<string>CATransactionDisable</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

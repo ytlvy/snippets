@@ -3,26 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initWithStyle</string>
+	<string>LazyGetter</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.width = ScreenWidth();
-        [self setupViews];
+	<string>- (&lt;#KWSLabel#&gt; *)&lt;#getter#&gt; {
+    if(_&lt;#p_seekLable#&gt;) {
+        
     }
-    
-    return self;
+    return _&lt;#p_seekLabel#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1401BA5C-2430-4BAF-845D-DCE33B80D4CD</string>
+	<string>3FD6163B-DDE7-4933-98B8-094169B04746</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>initOfCell</string>
+	<string>Getter</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

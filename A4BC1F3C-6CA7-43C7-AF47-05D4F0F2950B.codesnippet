@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>hitTest</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    
+    CGRect rect = self.p_sliderProgress.frame;
+    UIEdgeInsets inset = UIEdgeInsetsMake(-10, -10, -10, -10);
+    CGRect hitFrame = UIEdgeInsetsInsetRect(rect, inset);
+    
+    
+    UIView *superAnswer = [super hitTest:point withEvent:event];
+    
+    if (CGRectContainsPoint(hitFrame, point)) {
+        return self.p_sliderProgress;
+    }
+    else {
+        return superAnswer;
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A4BC1F3C-6CA7-43C7-AF47-05D4F0F2950B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>hittest</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

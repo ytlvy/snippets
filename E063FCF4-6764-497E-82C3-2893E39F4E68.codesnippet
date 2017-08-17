@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>caTextLayerTest</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (CATextLayer *)testLb {
+    if(_testLb == nil) {
+        CATextLayer *textLayer = [CATextLayer layer];
+        textLayer.foregroundColor = [UIColor whiteColor].CGColor;
+        textLayer.alignmentMode = kCAAlignmentJustified;
+        textLayer.wrapped = YES;
+        
+        //choose a font
+        UIFont *font = [UIFont systemFontOfSize:15];
+        
+        //set layer font
+        CFStringRef fontName = (__bridge CFStringRef)font.fontName;
+        CGFontRef fontRef = CGFontCreateWithFontName(fontName);
+        textLayer.font = fontRef;
+        textLayer.fontSize = font.pointSize;
+        CGFontRelease(fontRef);
+        
+        //choose some text
+        NSString *text = @"Lorem ipsum dolor sit amet, consectetur adipiscing \\ elit. Quisque massa arcu, eleifend vel varius in, facilisis pulvinar \\ leo. Nunc quis nunc at mauris pharetra condimentum ut ac neque. Nunc elementum, libero ut porttitor dictum, diam odio congue lacus, vel \\ fringilla sapien diam at purus. Etiam suscipit pretium nunc sit amet \\ lobortis";
+        textLayer.string = text;
+        
+        //解决像素化
+        textLayer.contentsScale = [UIScreen mainScreen].scale;
+        _testLb = textLayer;
+    }
+    return _testLb;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E063FCF4-6764-497E-82C3-2893E39F4E68</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>caTextLayerTest</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>caTextLayerTest</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
