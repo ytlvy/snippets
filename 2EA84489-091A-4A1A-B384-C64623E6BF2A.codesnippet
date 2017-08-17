@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>LazyView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) UIView * p_&lt;#lazyView#&gt;;
+- (UIView *)p_&lt;#lazyView#&gt; {
+    if(!_p_&lt;#lazyView#&gt;) {
+        _p_&lt;#lazyView#&gt; = [[UIView alloc] initWithFrame:CGRectZero];
+        _p_&lt;#lazyView#&gt;.backgroundColor = UIColorFromRGBAValue(0x000000, 0.8);
+    }
+    return _p_&lt;#lazyView#&gt;;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2EA84489-091A-4A1A-B384-C64623E6BF2A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>LazyView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

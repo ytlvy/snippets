@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazySlider</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (MVScheduleView *)p_sliderProgress {
+    if(!_p_sliderProgress) {
+        _p_sliderProgress = [[MVScheduleView alloc] init];
+        _p_sliderProgress.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        _p_sliderProgress.delegate = self;
+        _p_sliderProgress.needPan = YES;
+        
+    }
+    return _p_sliderProgress;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6A1C1DD9-BC35-4FE2-9242-0DAF2A109833</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>lazySlider</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazyLabel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) KWSLabel *&lt;#p_lazyLabel#&gt;;
+- (KWSLabel *)p_&lt;#lazyLabel#&gt; {
+    if(!_p_&lt;#lazyLabel#&gt;) {
+        _p_&lt;#lazyLabel#&gt; = [[KWSLabel alloc] initWithFontSize:KuwoUIConfig.fontNaviBar textColor: UIColorFromRGBValue(0xffffff)];
+        _p_&lt;#lazyLabel#&gt;.textAlignment = NSTextAlignmentLeft;
+        _p_&lt;#lazyLabel#&gt;.numberOfLines = 2;
+    }
+    return _&lt;#lazyLabel#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C92E9737-553F-4C13-9CDE-AD22BA32369A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>lazyLabel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
