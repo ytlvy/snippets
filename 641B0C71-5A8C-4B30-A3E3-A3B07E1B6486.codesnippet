@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TouchTest</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - 屏幕触摸
+const static CGFloat SWIP_DRAG_MIN = 20;
+static CGPoint kStartTouchPoint = CGPointZero;
+static BOOL kTouchMoveV = NO;
+static BOOL kTouchMoveH = NO;
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *aTouch = [touches anyObject];
+    CGPoint kStartTouchPoint = [aTouch locationInView:self];
+    
+    if (kStartTouchPoint.x &lt; CGRectGetWidth(self.bounds) / 2) {
+        
+    } 
+    else {
+        
+    }
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *aTouch = [touches anyObject];
+    CGPoint currentTouchPoint = [aTouch locationInView:self];
+    if (fabs(kStartTouchPoint.x - currentTouchPoint.x) &gt; SWIP_DRAG_MIN || fabs(kStartTouchPoint.y - currentTouchPoint.y) &gt; SWIP_DRAG_MIN)  {
+        
+        if (!kTouchMoveV &amp;&amp; fabs(kStartTouchPoint.x - currentTouchPoint.x) &gt;= fabs(kStartTouchPoint.y - currentTouchPoint.y)) { //横向
+            
+            if (kStartTouchPoint.x - currentTouchPoint.x &gt; 0) {//向左
+                
+            }
+            else {//向右
+                
+            }
+        }
+        else if(!kTouchMoveH) { //竖向
+            if (currentTouchPoint.y - kStartTouchPoint.y &gt; 0) {//向下
+                
+            }
+            else {
+                
+            }
+        }
+    }
+    
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    kTouchMoveV = NO;
+    kTouchMoveH = NO;
+    
+    UITouch *aTouch = [touches anyObject];
+    CGPoint currentTouchPoint = [aTouch locationInView:self];
+    if (fabs(kStartTouchPoint.x - currentTouchPoint.x) &gt; SWIP_DRAG_MIN || fabs(kStartTouchPoint.y - currentTouchPoint.y) &gt; SWIP_DRAG_MIN)  {
+        if (fabs(kStartTouchPoint.x - currentTouchPoint.x) &gt;= fabs(kStartTouchPoint.y - currentTouchPoint.y)) {//横向            
+            if (kStartTouchPoint.x - currentTouchPoint.x &gt; 0) {//向左
+               
+            }
+            else {//向右
+            }
+        }
+        else {// 竖向
+            
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>641B0C71-5A8C-4B30-A3E3-A3B07E1B6486</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>TouchTest</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TouchTest</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
