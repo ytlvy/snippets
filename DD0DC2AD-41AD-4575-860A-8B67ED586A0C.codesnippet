@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>PanTest</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - UIPanGestureRecognizer
+- (void)addPan {
+    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+    [self addGestureRecognizer:self.pan];
+}
+
+- (void)handlePan:(UIPanGestureRecognizer *)gesture {
+    
+    CGPoint pt = [gesture locationInView: self];
+    CGFloat percentage = pt.x / self.bounds.size.width;
+    
+    if(!CGRectContainsPoint(self.bounds, pt)) {
+        
+        return;
+    }
+    
+    if(gesture.state == UIGestureRecognizerStateBegan) {
+    
+    }
+    else if (gesture.state == UIGestureRecognizerStateChanged ) {
+        
+    }
+    else if(gesture.state == UIGestureRecognizerStateEnded ){
+        
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DD0DC2AD-41AD-4575-860A-8B67ED586A0C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>PanTest</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
