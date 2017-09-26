@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>scrollViewWillEndDragging</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+    CGFloat offset = 10.f;
+    if (velocity.y &gt; 0) {
+        CGPoint curOffset = [scrollView contentOffset];
+        curOffset.y += 10;
+        
+        targetContentOffset-&gt;y = curOffset.y + offset;
+    }
+    else if (velocity.y &lt; 0) {
+        CGPoint curOffset = [scrollView contentOffset];
+        curOffset.y += offset;
+        
+        targetContentOffset-&gt;y = curOffset.y - offset;
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D7285AFE-A24B-49B9-8C51-3EEAAD438A6D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>scrollViewWillEndDragging</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

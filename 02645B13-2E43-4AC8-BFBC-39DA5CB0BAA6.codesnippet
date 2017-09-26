@@ -30,6 +30,11 @@
 #pragma mark - Public Interface
 - (void)updateWithInfo:(id)info {
 	
+    [self setNeedsLayout];
+}
+
++ (CGFloat)recommandHeight {
+    return;
 }
 
 

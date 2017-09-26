@@ -3,40 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>backgroundEvent</string>
+	<string>buttonHandler</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)setupBackgroundEvent {
-    @weakify(self);
-    static NSInteger ver = 0;
-    __block NSInteger p_ver = ver;
-    self.backAdapter = [[KWBackNotificationAdapter alloc] initWith:^{
-        @strongify(self);
-        
-        ver++;
-        p_ver = ver;
-            
-        
-    } active:^{
-        @strongify(self);
-        if(p_ver == ver &amp;&amp; self.isFromBack) {
-            self.isFromBack = NO;
-           
-            
-        }
-    }];
+	<string>- (void)&lt;#button#&gt;Hander:(UIButton *)sender {
     
-}
-</string>
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>AF7AE0AC-D194-4A1B-BAA2-8440FF7DEB46</string>
+	<string>057A5183-63CC-4510-962E-D8FA04EE6EEC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>setupBackground</string>
+	<string>ButtonHandler</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
