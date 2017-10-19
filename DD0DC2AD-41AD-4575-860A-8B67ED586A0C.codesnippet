@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>PanTest</string>
+	<string>panTest</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -19,6 +19,7 @@
     
     CGPoint pt = [gesture locationInView: self];
     CGFloat percentage = pt.x / self.bounds.size.width;
+    CGFloat translation = [gesture translationInView:self].x;
     
     if(!CGRectContainsPoint(self.bounds, pt)) {
         

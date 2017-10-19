@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>- (&lt;#KWSLabel#&gt; *)&lt;#getter#&gt; {
-    if(_&lt;#p_seekLable#&gt;) {
+    if(!_&lt;#p_seekLable#&gt;) {
         
     }
     return _&lt;#p_seekLabel#&gt;;
@@ -20,7 +20,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Getter</string>
+	<string>LazyGetter</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

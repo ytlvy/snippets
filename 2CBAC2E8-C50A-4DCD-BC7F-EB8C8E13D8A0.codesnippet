@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, &lt;#strong#&gt;) &lt;#UIView *#&gt; &lt;#view#&gt;;
+	<string>property (nonatomic, &lt;#strong#&gt;) &lt;#UIView *#&gt; &lt;#view#&gt;;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2CBAC2E8-C50A-4DCD-BC7F-EB8C8E13D8A0</string>
