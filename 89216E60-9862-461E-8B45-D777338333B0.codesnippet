@@ -3,19 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>#pragma mark</string>
+	<string>pragma Cell</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - LifeCycle
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.width = ScreenWidth();
         [self setupViews];
     }
     
     return self;
+}
+
+- (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - GUI
@@ -23,28 +29,39 @@
     
 }
 
+static const CGFloat PADDING_LEFT = 15.0;
+
 - (void)layoutSubviews {
     [super layoutSubviews];
 }
 
+
+#pragma mark - IBActions
+
 #pragma mark - Public Interface
 - (void)updateWithInfo:(id)info {
-	
-    [self setNeedsLayout];
+    
 }
 
-+ (CGFloat)recommandHeight {
-    return;
++ (CGFloat)recommandHeightWithInfo:(id)inf {
+    
 }
 
++ (CGFloat)recommandHeightWithCellVM:(KWCellViewModel*)cellVM indexPath:(NSIndexPath*)indexPath {
+    
+}
 
-#pragma mark - Properties</string>
+#pragma mark - Private Interface
+
+
+#pragma mark - Properties
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>02645B13-2E43-4AC8-BFBC-39DA5CB0BAA6</string>
+	<string>89216E60-9862-461E-8B45-D777338333B0</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pageMarkView</string>
+	<string>cellMark</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

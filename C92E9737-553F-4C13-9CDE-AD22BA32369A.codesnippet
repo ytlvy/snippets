@@ -16,7 +16,7 @@
         _p_&lt;#lazyLabel#&gt;.textAlignment = NSTextAlignmentLeft;
         _p_&lt;#lazyLabel#&gt;.numberOfLines = 2;
     }
-    return _&lt;#lazyLabel#&gt;;
+    return _p_&lt;#lazyLabel#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>C92E9737-553F-4C13-9CDE-AD22BA32369A</string>
