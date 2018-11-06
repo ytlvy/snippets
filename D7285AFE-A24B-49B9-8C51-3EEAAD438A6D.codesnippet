@@ -27,7 +27,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D7285AFE-A24B-49B9-8C51-3EEAAD438A6D</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>scrollViewWillEndDragging</string>
 	<key>IDECodeSnippetUserSnippet</key>

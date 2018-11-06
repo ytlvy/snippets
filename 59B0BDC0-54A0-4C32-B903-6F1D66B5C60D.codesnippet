@@ -3,19 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>msgt1</string>
+	<string>LazyImageView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[KWSimpleMsgBoxMgr shareMgr] msgBoxWithTitle:@"温馨提示" message:@"1吧" buttonTitle:@"确定"];</string>
+	<string>@property (nonatomic, strong) UIImageView *p_imageView;
+
+- (UIImageView *)p_&lt;#imageView#&gt; {
+    if(_p_&lt;#imageView#&gt; == nil) {
+        _p_&lt;#imageView#&gt; = [[UIImageView alloc] initWithImage:[KWDefaultImageManager defaultMVImage]];
+        _p_&lt;#imageView#&gt;.contentMode = UIViewContentModeScaleAspectFill;
+        _p_&lt;#imageView#&gt;.clipsToBounds = YES;
+    }
+    return _p_&lt;#imageView#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EAB358A5-2112-4423-8699-AF4C405F67A6</string>
+	<string>59B0BDC0-54A0-4C32-B903-6F1D66B5C60D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MsgBoxToastTitle</string>
+	<string>LazyImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

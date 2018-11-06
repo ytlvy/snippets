@@ -18,7 +18,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6C026CCE-7C00-4445-9B45-CFFE6BCEC32B</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>MsgBoxSync</string>
 	<key>IDECodeSnippetUserSnippet</key>

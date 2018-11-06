@@ -34,7 +34,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>AF7AE0AC-D194-4A1B-BAA2-8440FF7DEB46</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>setupBackground</string>
 	<key>IDECodeSnippetUserSnippet</key>

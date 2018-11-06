@@ -3,19 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>msgt1</string>
+	<string>LazyWebImageView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[KWSimpleMsgBoxMgr shareMgr] msgBoxWithTitle:@"温馨提示" message:@"1吧" buttonTitle:@"确定"];</string>
+	<string>@property (nonatomic, strong) KWSDWebImageView *p_imageView;
+
+- (KWSDWebImageView *)p_&lt;#imageView#&gt; {
+if(_p_&lt;#imageView#&gt; == nil) {
+_p_&lt;#imageView#&gt; = [[KWSDWebImageView alloc] initWithImage:[KWDefaultImageManager defaultMVImage]];
+_p_&lt;#imageView#&gt;.contentMode = UIViewContentModeScaleAspectFill;
+}
+return _p_&lt;#imageView#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EAB358A5-2112-4423-8699-AF4C405F67A6</string>
+	<string>2409A511-1070-4CD7-9D1E-E7242BA23DC3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MsgBoxToastTitle</string>
+	<string>LazyWebImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

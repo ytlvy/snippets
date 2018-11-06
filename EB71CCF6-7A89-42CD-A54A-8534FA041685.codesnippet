@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>msgt1</string>
+	<string>OfflineWeb</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[KWSimpleMsgBoxMgr shareMgr] msgBoxWithTitle:@"温馨提示" message:@"1吧" buttonTitle:@"确定"];</string>
+	<string>[KWURLRouter openURL:@"kwurl://main_web/open_router?param=%7b%22appid%22%3a%228000000%22%2c%22url%22%3a%22feedback.html%22%2c%22data%22%3a%7b%7d%7d&amp;totalUrl=http%3a%2f%2fh5app.kuwo.cn%2f8000000%2ffeedback.html"];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EAB358A5-2112-4423-8699-AF4C405F67A6</string>
+	<string>EB71CCF6-7A89-42CD-A54A-8534FA041685</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MsgBoxToastTitle</string>
+	<string>OfflineWeb</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

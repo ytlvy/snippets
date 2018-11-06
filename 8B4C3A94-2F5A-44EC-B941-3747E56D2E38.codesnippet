@@ -43,7 +43,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>8B4C3A94-2F5A-44EC-B941-3747E56D2E38</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>attributedString</string>
 	<key>IDECodeSnippetUserSnippet</key>

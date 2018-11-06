@@ -25,7 +25,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B0C6CE68-2EF8-4A8B-AD94-BBA849AB2400</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>DispatchTimer</string>
 	<key>IDECodeSnippetUserSnippet</key>

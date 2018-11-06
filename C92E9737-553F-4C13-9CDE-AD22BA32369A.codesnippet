@@ -9,19 +9,19 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) KWSLabel *&lt;#p_lazyLabel#&gt;;
-- (KWSLabel *)p_&lt;#lazyLabel#&gt; {
-    if(!_p_&lt;#lazyLabel#&gt;) {
-        _p_&lt;#lazyLabel#&gt; = [[KWSLabel alloc] initWithFontSize:KuwoUIConfig.fontNaviBar textColor: UIColorFromRGBValue(0xffffff)];
-        _p_&lt;#lazyLabel#&gt;.textAlignment = NSTextAlignmentLeft;
-        _p_&lt;#lazyLabel#&gt;.numberOfLines = 2;
+	<string>@property (nonatomic, strong) KWSLabel *p_&lt;#titleLabel#&gt;;
+- (KWSLabel *)p_&lt;#titleLabel#&gt; {
+    if(!_p_&lt;#titleLabel#&gt;) {
+        _p_&lt;#titleLabel#&gt; = [[KWSLabel alloc] initWithFontSize:KuwoUIConfig.fontNaviBar textColor: UIColorFromRGBValue(0xffffff)];
+        _p_&lt;#titleLabel#&gt;.textAlignment = NSTextAlignmentLeft;
+        _p_&lt;#titleLabel#&gt;.numberOfLines = 2;
     }
-    return _p_&lt;#lazyLabel#&gt;;
+    return _p_&lt;#titleLabel#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>C92E9737-553F-4C13-9CDE-AD22BA32369A</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>lazyLabel</string>
 	<key>IDECodeSnippetUserSnippet</key>

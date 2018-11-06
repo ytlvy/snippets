@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>+(instancetype) sharedInstance</string>
+	<string>+ (instancetype)sharedInstance</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -20,7 +20,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2FEA94EB-06C1-4DCC-9255-54D4F37F251E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>sharedInstance</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>sharedInstance</string>
 	<key>IDECodeSnippetUserSnippet</key>

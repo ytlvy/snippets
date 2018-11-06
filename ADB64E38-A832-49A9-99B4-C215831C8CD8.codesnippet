@@ -14,7 +14,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>ADB64E38-A832-49A9-99B4-C215831C8CD8</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>controlParams</string>
 	<key>IDECodeSnippetUserSnippet</key>

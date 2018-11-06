@@ -13,7 +13,7 @@
 - (UIView *)p_&lt;#lazyView#&gt; {
     if(!_p_&lt;#lazyView#&gt;) {
         _p_&lt;#lazyView#&gt; = [[UIView alloc] initWithFrame:CGRectZero];
-        _p_&lt;#lazyView#&gt;.backgroundColor = UIColorFromRGBAValue(0x000000, 0.8);
+        _p_&lt;#lazyView#&gt;.backgroundColor = UIColorFromRGBAValue(0x000000, 0.8*255);
     }
     return _p_&lt;#lazyView#&gt;;
 }
@@ -21,7 +21,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2EA84489-091A-4A1A-B384-C64623E6BF2A</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>LazyView</string>
 	<key>IDECodeSnippetUserSnippet</key>

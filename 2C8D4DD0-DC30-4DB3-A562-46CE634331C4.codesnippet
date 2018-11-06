@@ -12,15 +12,16 @@
 	<string>@property (nonatomic, strong) KuwoButton *p_&lt;#lazyButton#&gt;;
 - (KuwoButton *)p_&lt;#lazyButton#&gt; {
     if(!_p_&lt;#lazyButton#&gt;) {
-        _p_&lt;#lazyButton#&gt; =  [KuwoButton buttonWithImage:[UIImage skinImageNamed:@"&lt;#path#&gt;.png"] imageHightlighted:[UIImage skinImageNamed:@"&lt;#highpath#&gt;"] target:self action:@selector(&lt;#selector#&gt;:)];
-        _p_&lt;#lazyButton#&gt;.hitTestEdgeInsets = UIEdgeInsetsMake(-10, -10, -10, -10);
+        KuwoButton *btn =  [KuwoButton buttonWithImage:[UIImage skinImageNamed:@"&lt;#path#&gt;.png"] imageHightlighted:[UIImage skinImageNamed:@"&lt;#highpath#&gt;"] target:self action:@selector(&lt;#selector#&gt;:)];
+        btn.hitTestEdgeInsets = UIEdgeInsetsMake(-10, -10, -10, -10);
+        _p_&lt;#lazyButton#&gt; = btn;
     }
     return _p_&lt;#lazyButton#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2C8D4DD0-DC30-4DB3-A562-46CE634331C4</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>lazyButton</string>
 	<key>IDECodeSnippetUserSnippet</key>

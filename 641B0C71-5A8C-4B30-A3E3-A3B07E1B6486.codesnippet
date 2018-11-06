@@ -76,7 +76,7 @@ static BOOL kTouchMoveH = NO;
 	<key>IDECodeSnippetIdentifier</key>
 	<string>641B0C71-5A8C-4B30-A3E3-A3B07E1B6486</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>TouchTest</string>
 	<key>IDECodeSnippetTitle</key>

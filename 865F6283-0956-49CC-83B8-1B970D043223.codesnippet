@@ -3,19 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>msgt1</string>
+	<string>LazyIcon</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[KWSimpleMsgBoxMgr shareMgr] msgBoxWithTitle:@"温馨提示" message:@"1吧" buttonTitle:@"确定"];</string>
+	<string>@property (nonatomic, strong) UIImageView *p_&lt;#triangular#&gt;Icon;
+
+- (UIImageView *)p_&lt;#triangular#&gt;Icon {
+    if(_p_&lt;#triangular#&gt;Icon == nil) {
+_p_&lt;#triangular#&gt;Icon = [[KWSDWebImageView alloc] initWithImage:UIImage skinImageNamed:@"&lt;#feeds/icon_ biaoti_unfold#&gt;.png"]];
+        _p_&lt;#triangular#&gt;Icon.contentMode = UIViewContentModeScaleAspectFill;
+    }
+    return _p_&lt;#triangular#&gt;Icon;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EAB358A5-2112-4423-8699-AF4C405F67A6</string>
+	<string>865F6283-0956-49CC-83B8-1B970D043223</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MsgBoxToastTitle</string>
+	<string>LazyIcon</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

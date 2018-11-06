@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pragma Cell</string>
+	<string>#pragma mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -29,7 +29,7 @@
     
 }
 
-static const CGFloat PADDING_LEFT = 15.0;
+static const CGFloat PADDING_LEFT = CELL_CONTENT_PADDING;
 
 - (void)layoutSubviews {
     [super layoutSubviews];
@@ -39,15 +39,11 @@ static const CGFloat PADDING_LEFT = 15.0;
 #pragma mark - IBActions
 
 #pragma mark - Public Interface
-- (void)updateWithInfo:(id)info {
+- (void)updateCellUseCellVMwithIndexPath:(NSIndexPath*)indexPath {
     
 }
 
-+ (CGFloat)recommandHeightWithInfo:(id)inf {
-    
-}
-
-+ (CGFloat)recommandHeightWithCellVM:(KWCellViewModel*)cellVM indexPath:(NSIndexPath*)indexPath {
++ (CGFloat)recommandHeightWithCellVM:(KWCellViewModel*)cellVM{
     
 }
 

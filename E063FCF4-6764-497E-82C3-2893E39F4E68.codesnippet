@@ -40,7 +40,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E063FCF4-6764-497E-82C3-2893E39F4E68</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>caTextLayerTest</string>
 	<key>IDECodeSnippetTitle</key>

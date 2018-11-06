@@ -29,7 +29,7 @@
 
 #pragma mark - Public Interface
 - (void)updateWithInfo:(id)info {
-	
+    
     [self setNeedsLayout];
 }
 
@@ -42,7 +42,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>02645B13-2E43-4AC8-BFBC-39DA5CB0BAA6</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>pageMarkView</string>
 	<key>IDECodeSnippetUserSnippet</key>
