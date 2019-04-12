@@ -3,30 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sharedInstance</string>
+	<string>preferStatusbarStyle</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)sharedInstance {
-    static id s_instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        s_instance = [[self alloc] init];
-    });
-    return s_instance;
+	<string>- (UIStatusBarStyle)kw_preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2FEA94EB-06C1-4DCC-9255-54D4F37F251E</string>
+	<string>D4170005-6948-40CC-8AEC-DEE55E168DF4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>sharedInstance</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>sharedInstance</string>
+	<string>preferStatusbarStyle</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
