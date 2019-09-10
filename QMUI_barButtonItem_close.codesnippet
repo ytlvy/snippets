@@ -3,27 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lazyLabel</string>
+	<string>closeItem</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) KWSLabel *p_&lt;#titleLabel#&gt;;
-- (KWSLabel *)p_&lt;#titleLabel#&gt; {
-    if(!_p_&lt;#titleLabel#&gt;) {
-        _p_&lt;#titleLabel#&gt; = [[KWSLabel alloc] initWithFontSize:14 textColor: g_configUI.colorMainText];
-        _p_&lt;#titleLabel#&gt;.textAlignment = NSTextAlignmentLeft;
-        _p_&lt;#titleLabel#&gt;.numberOfLines = 2;
-    }
-    return _p_&lt;#titleLabel#&gt;;
-}</string>
+	<string>[UIBarButtonItem qmui_closeItemWithTarget:self action:@selector(&lt;#selector name#&gt;)];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C92E9737-553F-4C13-9CDE-AD22BA32369A</string>
+	<string>F68179BA-29CA-48D0-8F20-54CE21E05920</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>lazyLabel</string>
+	<string>Close UIBarButtonItem</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

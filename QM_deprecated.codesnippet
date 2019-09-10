@@ -3,20 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@strongify</string>
+	<string>deprecated</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@strongify(self);
-if(!self) return;</string>
+	<string>DEPRECATED_MSG_ATTRIBUTE("&lt;#message#&gt;")</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>55ABF749-1B40-4F57-AA9B-E29C825486F9</string>
+	<string>B3E536D7-2C10-4F21-9FB8-2173A3D5DD8D</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>strongself</string>
+	<string>deprecated message</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
