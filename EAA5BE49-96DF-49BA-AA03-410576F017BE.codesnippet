@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(UIView *) findReorderView:(UIView *) view
+{
+    UIView *reorderView = nil;
+    for (UIView *subview in view.subviews) {
+        if ([[[subview class] description] rangeOfString:@"Reorder"].location != NSNotFound) {
+            reorderView = subview;
+            break;
+        }
+        else {
+            reorderView = [self findReorderView:subview];
+            if (reorderView != nil) {
+                break;
+            }
+        }
+    }
+    return reorderView;
+}
+
+-(void) setEditing:(BOOL)editing animated:(BOOL)animated
+{
+    [super setEditing:editing animated:animated];
+    if (editing) {
+        UIView *reorderView = [self findReorderView:self];
+        if (reorderView) {
+            reorderView.backgroundColor = self.contentView.backgroundColor;
+            for (UIView *sv in reorderView.subviews) {
+                if ([sv isKindOfClass:[UIImageView class]]) {
+                    ((UIImageView *)sv).image = [((UIImageView *)sv).image kwImageWithTintColor:(g_configUI.colorC3)];
+                }
+            }
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EAA5BE49-96DF-49BA-AA03-410576F017BE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>templateEditCell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

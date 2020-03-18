@@ -15,7 +15,9 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>73469CA7-C83E-4CD2-A62B-B5EF934DD910</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>cellularEnbale</string>
 	<key>IDECodeSnippetUserSnippet</key>

@@ -25,7 +25,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5BD3118C-1D72-471C-BED5-AF14D9EE54FF</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>QMUI - 用swizzle方式创建weak类型的property的getter/setter</string>
 	<key>IDECodeSnippetUserSnippet</key>

@@ -3,20 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ctr</string>
+	<string>iconImgView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>KSHTTPControlPara *ctrlPara = [[KSHTTPControlPara alloc] init];
+	<string> [KWIconFontImageView imageViewWithCode:@"&lt;#&amp;#xe6b2;#&gt;" size:10 color:g_configUI.colorC3];
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>ADB64E38-A832-49A9-99B4-C215831C8CD8</string>
+	<string>3FAC1698-8A9F-41E5-958D-4CE9F73AB7FA</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>controlParams</string>
+	<string>iconImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

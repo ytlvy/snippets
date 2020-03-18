@@ -10,9 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>- (BOOL)loadSkin:(CSkin *)pSkin {
-    [super loadSkin:pSkin];
-    
-    if (!pSkin)
+    if (![super loadSkin:pSkin])
         return FALSE;
     
     self.titleLabel.textColor = g_configUI.colorSecondaryText;
@@ -22,7 +20,9 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>36587C97-B6D4-4FC7-A08B-21BE97A5DCE4</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>loadSkin</string>
 	<key>IDECodeSnippetUserSnippet</key>

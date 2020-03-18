@@ -15,7 +15,9 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>FE5C24D6-F853-49BD-BB6F-94745238F320</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>dispatch_main</string>
 	<key>IDECodeSnippetUserSnippet</key>

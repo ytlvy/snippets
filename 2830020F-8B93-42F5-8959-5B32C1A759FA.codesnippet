@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>flag</string>
+	<string>iconfont</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>OnlineItemFlag flag = (info.extendFlag ? info.extendFlag : info.flag);</string>
+	<string>UIImage *icon = [UIImage imageWithIconFontCode:@"&lt;#(NSString *)#&gt;" size:&lt;#(NSInteger)#&gt; color:&lt;#(UIColor *)#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>565E5314-F340-40E9-B397-F9DDD014F643</string>
+	<string>2830020F-8B93-42F5-8959-5B32C1A759FA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>extendFlag</string>
+	<string>iconfont</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

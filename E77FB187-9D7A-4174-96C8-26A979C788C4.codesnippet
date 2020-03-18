@@ -3,19 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>flag</string>
+	<string>lazySkinCheck</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>OnlineItemFlag flag = (info.extendFlag ? info.extendFlag : info.flag);</string>
+	<string>@property (nonatomic, strong) KWSkinCheckBox* p_checkBox;
+- (KWSkinCheckBox *)p_checkBox {
+    if (!_p_checkBox) {
+        _p_checkBox =  [KWSkinCheckBox defaultCheckBox];
+        _p_checkBox.userInteractionEnabled = NO;
+    }
+    return _p_checkBox;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>565E5314-F340-40E9-B397-F9DDD014F643</string>
+	<string>E77FB187-9D7A-4174-96C8-26A979C788C4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>extendFlag</string>
+	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -55,7 +55,9 @@ static const CGFloat PADDING_LEFT = CELL_CONTENT_PADDING;
 	<key>IDECodeSnippetIdentifier</key>
 	<string>89216E60-9862-461E-8B45-D777338333B0</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>cellMark</string>
 	<key>IDECodeSnippetUserSnippet</key>

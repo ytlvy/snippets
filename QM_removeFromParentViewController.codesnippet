@@ -15,7 +15,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>04996CD3-4E1F-49A9-A3CC-C3E42D5673BB</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>UIViewController removeFromParentViewController</string>
 	<key>IDECodeSnippetTitle</key>

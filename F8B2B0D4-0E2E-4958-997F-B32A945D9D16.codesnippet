@@ -19,7 +19,9 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F8B2B0D4-0E2E-4958-997F-B32A945D9D16</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>cusotm init</string>
 	<key>IDECodeSnippetUserSnippet</key>

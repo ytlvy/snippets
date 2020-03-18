@@ -20,7 +20,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>499A01BF-2245-446A-A7D5-D940FE6833CD</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>用swizzle方式创建copy类型的property的getter/setter</string>
 	<key>IDECodeSnippetUserSnippet</key>

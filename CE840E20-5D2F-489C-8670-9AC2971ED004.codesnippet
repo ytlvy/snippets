@@ -7,10 +7,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (KWSkinButton *)p_&lt;#mainBtn#&gt; {
+	<string>@property (nonatomic, strong) KWSkinButton *p_&lt;#mainBtn#&gt;;
+- (KWSkinButton *)p_&lt;#mainBtn#&gt; {
 if(!_p_&lt;#mainBtn#&gt;) {
         KWSkinButton *btn =  [KWSkinButton defaultButtonWithTitle:@"&lt;#立即连接#&gt;" style:KWSkinButtonStyle_Strong];
         [btn setTitleFont:[UIFont systemFontOfSize:18]];
+         btn.onTouchUpInside = ^(UIButton *sender, UIEvent *event) {
+         };
         btn.layer.cornerRadius = 8;
         btn.layer.masksToBounds = YES;
         btn.hitTestEdgeInsets = UIEdgeInsetsMake(-10, -10, -10, -10);
@@ -21,7 +24,7 @@ return _p_&lt;#mainBtn#&gt;;
 	<key>IDECodeSnippetIdentifier</key>
 	<string>CE840E20-5D2F-489C-8670-9AC2971ED004</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>LazySkinButton</string>
 	<key>IDECodeSnippetUserSnippet</key>

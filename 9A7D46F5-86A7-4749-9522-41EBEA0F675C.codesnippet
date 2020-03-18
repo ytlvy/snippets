@@ -3,22 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>flag</string>
+	<string>func empty</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>OnlineItemFlag flag = (info.extendFlag ? info.extendFlag : info.flag);</string>
+	<string>func &lt;#name#&gt;() {
+        &lt;#function body#&gt;
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>565E5314-F340-40E9-B397-F9DDD014F643</string>
+	<string>9A7D46F5-86A7-4749-9522-41EBEA0F675C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>extendFlag</string>
+	<string>function empty</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

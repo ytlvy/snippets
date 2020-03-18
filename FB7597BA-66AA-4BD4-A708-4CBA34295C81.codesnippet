@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>set</string>
+	<string>assosiate Property</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -19,7 +19,9 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>FB7597BA-66AA-4BD4-A708-4CBA34295C81</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>assosiate Property</string>
 	<key>IDECodeSnippetUserSnippet</key>
