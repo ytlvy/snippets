@@ -9,19 +9,21 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) UIImageView *p_&lt;#triangular#&gt;Icon;
+	<string>@property (nonatomic, strong) UIImageView *&lt;#p_Icon#&gt;;
 
-- (UIImageView *)p_&lt;#triangular#&gt;Icon {
-    if(_p_&lt;#triangular#&gt;Icon == nil) {
-_p_&lt;#triangular#&gt;Icon = [[UIImageView alloc] initWithImage:UIImage skinImageNamed:@"&lt;#feeds/icon_ biaoti_unfold#&gt;.png"]];
-        _p_&lt;#triangular#&gt;Icon.contentMode = UIViewContentModeScaleAspectFill;
+- (UIImageView *)&lt;#p_Icon#&gt; {
+    if(_&lt;#p_Icon#&gt; == nil) {
+        _&lt;#p_Icon#&gt;= [[UIImageView alloc] initWithImage:UIImage skinImageNamed:@"&lt;#feeds/icon_ biaoti_unfold#&gt;.png"]];
+        _&lt;#p_Icon#&gt;.contentMode = UIViewContentModeScaleAspectFill;
     }
-    return _p_&lt;#triangular#&gt;Icon;
+    return _&lt;#p_Icon#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>865F6283-0956-49CC-83B8-1B970D043223</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>LazyIcon</string>
 	<key>IDECodeSnippetUserSnippet</key>

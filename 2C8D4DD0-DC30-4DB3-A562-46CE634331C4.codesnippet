@@ -3,27 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lazyButton</string>
+	<string>lazyImageButton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) KuwoButton *p_&lt;#lazyButton#&gt;;
-- (KuwoButton *)p_&lt;#lazyButton#&gt; {
-    if(!_p_&lt;#lazyButton#&gt;) {
+	<string>@property (nonatomic, strong) KuwoButton *&lt;#p_imgButton#&gt;;
+- (KuwoButton *)&lt;#p_imgButton#&gt; {
+    if(!_&lt;#p_imgButton#&gt;) {
         KuwoButton *btn =  [KuwoButton buttonWithImage:[UIImage skinImageNamed:@"&lt;#path#&gt;.png"] imageHightlighted:[UIImage skinImageNamed:@"&lt;#highpath#&gt;"] target:self action:@selector(&lt;#selector#&gt;:)];
         btn.hitTestEdgeInsets = UIEdgeInsetsMake(-10, -10, -10, -10);
-        _p_&lt;#lazyButton#&gt; = btn;
+        _&lt;#p_imgButton#&gt; = btn;
     }
-    return _p_&lt;#lazyButton#&gt;;
+    return _&lt;#p_imgButton#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2C8D4DD0-DC30-4DB3-A562-46CE634331C4</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>lazyButton</string>
+	<string>lazyImageButton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

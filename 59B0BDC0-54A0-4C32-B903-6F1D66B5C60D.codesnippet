@@ -9,20 +9,22 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) UIImageView *p_imageView;
+	<string>@property (nonatomic, strong) UIImageView *&lt;#p_imageView#&gt;;
 
-- (UIImageView *)p_&lt;#imageView#&gt; {
-    if(_p_&lt;#imageView#&gt; == nil) {
-        _p_&lt;#imageView#&gt; = [[UIImageView alloc] initWithImage:[KWDefaultImageManager defaultMVImage]];
-        _p_&lt;#imageView#&gt;.contentMode = UIViewContentModeScaleAspectFill;
-        _p_&lt;#imageView#&gt;.clipsToBounds = YES;
+- (UIImageView *)&lt;#p_imageView#&gt; {
+    if(_&lt;#p_imageView#&gt; == nil) {
+        _&lt;#p_imageView#&gt; = [[UIImageView alloc] initWithImage:[KWDefaultImageManager defaultMVImage]];
+        _&lt;#p_imageView#&gt;.contentMode = UIViewContentModeScaleAspectFill;
+        _&lt;#p_imageView#&gt;.clipsToBounds = YES;
     }
-    return _p_&lt;#imageView#&gt;;
+    return _&lt;#p_imageView#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>59B0BDC0-54A0-4C32-B903-6F1D66B5C60D</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>LazyImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>

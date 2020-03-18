@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>LazySkinButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) KWSkinButton *&lt;#p_secondbtn#&gt;;
+- (KWSkinButton *)&lt;#p_secondbtn#&gt; {
+    if(!_&lt;#p_secondbtn#&gt;) {
+        KWSkinButton *btn = [KWSkinButton defaultButtonWithTitle:@"&lt;#我知道了#&gt;"];
+        [btn setTitleFont:[UIFont systemFontOfSize:14]];
+        @weakify(self);
+        btn.onTouchUpInside = ^(UIButton *sender, UIEvent *event) {
+            @strongify(self);
+           
+        };
+        btn.layer.cornerRadius = 3;
+        btn.layer.masksToBounds = YES;
+        
+        _&lt;#p_secondbtn#&gt; = btn;
+    }
+    return _&lt;#p_secondbtn#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4EEE28C1-950F-4EFC-BFEE-22049FD28FF3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>LazySkinButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

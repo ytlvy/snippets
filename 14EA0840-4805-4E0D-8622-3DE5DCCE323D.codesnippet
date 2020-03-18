@@ -3,40 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>backgroundEvent</string>
+	<string>LazyDetailLabel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)setupBackgroundEvent {
-    @weakify(self);
-    static NSInteger ver = 0;
-    __block NSInteger p_ver = ver;
-    self.backAdapter = [[KWBackNotificationAdapter alloc] initWith:^{
-        @strongify(self);
-        
-        ver++;
-        p_ver = ver;
-            
-        
-    } active:^{
-        @strongify(self);
-        if(p_ver == ver &amp;&amp; self.isFromBack) {
-            self.isFromBack = NO;
-           
-            
-        }
-    }];
-    
-}
-</string>
+	<string>@property (nonatomic, strong) KWSLabel *p_detailLabel;
+- (KWSLabel *)p_detailLabel {
+    if(!_p_detailLabel) {
+        _p_detailLabel = [[KWSLabel alloc] initWithFontSize:14 textColor: g_configUI.colorMainText];
+        _p_detailLabel.textAlignment = NSTextAlignmentLeft;
+        _p_detailLabel.numberOfLines = 2;
+    }
+    return _p_detailLabel;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>AF7AE0AC-D194-4A1B-BAA2-8440FF7DEB46</string>
+	<string>14EA0840-4805-4E0D-8622-3DE5DCCE323D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>setupBackground</string>
+	<string>LazyDetailLabel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
