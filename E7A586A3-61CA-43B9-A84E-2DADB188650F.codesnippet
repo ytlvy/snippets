@@ -3,25 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>available</string>
+	<string>LazySwitch</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>if (@available(iOS &lt;#12.0#&gt;, *)) {
-    &lt;#statements#&gt;
+	<string>@property (nonatomic, strong) KWSkinSwitch *p_switch;
+- (KWSkinSwitch *)p_switch {
+    if(!_p_switch) {
+        _p_switch = [KWSkinSwitch defaultSwitch];
+        _p_switch.userInteractionEnabled = NO;
+        _p_switch.contentMode = UIViewContentModeScaleAspectFit;
+    }
+    return _p_switch;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EABDAB9C-966F-4442-B386-DFBAC52FF6D9</string>
+	<string>E7A586A3-61CA-43B9-A84E-2DADB188650F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>@available iOS</string>
+	<string>LazySwitch</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

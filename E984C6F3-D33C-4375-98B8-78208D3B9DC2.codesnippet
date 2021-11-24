@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ShowKWStringGuide</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)showAnchorGuide{
+    
+    NSString *desc = @"在这里查看最近播放的听书.电台内容";
+    NSUInteger idx = [self indexOfRecentType:KWMyRecentTypeRadio];
+    UIView *sender = [self.segmentBar segmentButtonAtIndex:idx];
+    if(!sender) return;
+    
+    CGRect rect = [sender convertRect:sender.bounds toView:APP_KEYWINDOW];
+    KWStringTipsView *showTipsView = [[KWStringTipsView alloc] initWithTipsPoint:CGPointMake(rect.origin.x + (rect.size.width / 2.0f), rect.origin.y + rect.size.height + 5) Tips:desc];
+    [APP_KEYWINDOW addSubview:showTipsView];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if(showTipsView.window) {
+            [showTipsView removeFromSuperview];
+        }
+    });
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E984C6F3-D33C-4375-98B8-78208D3B9DC2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ShowKWStringGuide</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

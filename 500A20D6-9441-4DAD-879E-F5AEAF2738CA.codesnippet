@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>s_request</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) KWURLSessionTask *shareRequset;
+
+- (void)fetchShareInfo:(KWShareSourceInfo *)sourceInfo complete:(void(^)(void))completeBlk {
+    
+    [self.shareRequset cancel];
+    
+    NSString *host = @"http://wapi.kuwo.cn/api/video/topMenu";
+    NSDictionary *params = @{
+                             @"uid"      : [KWURLHelper userId],
+                             @"devid"    : [KWURLHelper recommendId],
+                             @"platform" : @"ip",
+                             @"apiVer"   : @(3),
+                             };
+    NSString *url = [[KWURLHelper urlStringFromHost:host paras:params] stringByAppendingString:[NSString stringWithFormat:@"&amp;%@", DefaultRequestHeader()]];
+    
+    self.shareRequset = [KWAFNHttpManager ex_json_url_GET:url completionInMainThread:YES completion:^(id jsonObject, KWHTTPURLResponse *urlResponse) {
+        NSDictionary *resultDic = jsonObject;
+        if(urlResponse.success &amp;&amp; resultDic) {
+            if(![resultDic isKindOfClass:[NSDictionary class]]) {
+                completeBlk();
+                return;
+            }
+            
+            NSArray *msgs = [resultDic kw_arrayValueForKey:@"mvtype"];
+            if([msgs isKindOfClass:[NSArray class]]) {
+                
+            }
+        }
+        
+        completeBlk();
+    }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>500A20D6-9441-4DAD-879E-F5AEAF2738CA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

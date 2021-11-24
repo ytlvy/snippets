@@ -3,25 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>available</string>
+	<string>LazyFview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>if (@available(iOS &lt;#12.0#&gt;, *)) {
-    &lt;#statements#&gt;
+	<string>@property (nonatomic, strong) FuzzyView *fView;
+- (FuzzyView *)fView {
+    if(_fView == nil) {
+        _fView = [[FuzzyView alloc] initWithFrame:CGRectZero];
+        if ([g_configUI IsPureColorSkin])
+        {
+            _fView.whiteStyle = YES;
+        }
+        else
+        {
+            [_fView setTintColor:UIColorFromRGBAValue(0x000000, 255*0.05)];
+        }
+        
+    }
+    return _fView;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EABDAB9C-966F-4442-B386-DFBAC52FF6D9</string>
+	<string>E3610C93-2727-45AF-99FF-BBF5C5A8CF24</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>@available iOS</string>
+	<string>LazyFview</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

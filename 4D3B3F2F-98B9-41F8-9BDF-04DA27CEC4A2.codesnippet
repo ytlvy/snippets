@@ -3,33 +3,37 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initFView</string>
+	<string>init</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (FuzzyView *)fView {
-    if(_fView == nil) {
-        _fView = [[FuzzyView alloc] initWithFrame:CGRectZero];
-        if ([g_configUI IsPureColorSkin])
-        {
-            _fView.whiteStyle = YES;
-        }
-        else
-        {
-            [_fView setTintColor:UIColorFromRGBAValue(0x000000, 255*0.05)];
-        }
-        
+	<string>    //MARK: - Init
+    deinit {
+        print("deinit")
     }
-    return _fView;
-}</string>
+    
+    convenience init() {
+        self.init(libPath: nil)
+    }
+
+    init(libPath: String?) {
+        self.libPath = libPath
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder : NSCoder) {
+        super.init(coder: coder)
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A6C1B623-84AF-4202-800A-A4D9851008A9</string>
+	<string>4D3B3F2F-98B9-41F8-9BDF-04DA27CEC4A2</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>FView Init</string>
+	<string>viewControllerInit</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -12,7 +12,7 @@
 	<string>@property (nonatomic, strong) KWSLabel *&lt;#p_titleLabel#&gt;;
 - (KWSLabel *)&lt;#p_titleLabel#&gt; {
     if(!_&lt;#p_titleLabel#&gt;) {
-        _&lt;#p_titleLabel#&gt; = [[KWSLabel alloc] initWithFontSize:14 textColor: g_configUI.colorMainText];
+        _&lt;#p_titleLabel#&gt; = [[KWSLabel alloc] initWithFontSize:14 textColor: g_configUI.colorC1];
         _&lt;#p_titleLabel#&gt;.textAlignment = NSTextAlignmentLeft;
         _&lt;#p_titleLabel#&gt;.numberOfLines = 2;
     }

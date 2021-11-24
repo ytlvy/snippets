@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>LazyButtonWIthIconfont</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) KuwoButton *&lt;#p_addButton#&gt;;
+- (KuwoButton *)&lt;#p_addButton#&gt; {
+    if(!_&lt;#p_addButton#&gt;) {
+        @weakify(self);
+        KuwoButton *btn =  [KuwoButton buttonWithIconCode:@"&lt;#&amp;#xe6b7;#&gt;" color:UIColorFromRGBAValue(0xffffff, 255) highlightedCode:nil highlightedColor:nil size:11 action:^(UIButton *button) {
+            @strongify(self);
+            if(!self) return;
+            
+        }];
+        btn.hitTestEdgeInsets = UIEdgeInsetsMake(-10, -10, -10, -10);
+        _&lt;#p_addButton#&gt; = btn;
+    }
+    return _&lt;#p_addButton#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5FCB82F4-2591-4ACF-9F3B-D7EB2E789235</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>LazyButtonWIthIconfont</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

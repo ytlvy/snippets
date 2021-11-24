@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>LazyTextBtn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) KuwoButton *&lt;#p_cancelButton#&gt;;
+- (KuwoButton *)p_cancelButton {
+    if(!_&lt;#p_cancelButton#&gt;) {
+        @weakify(self);
+        KuwoButton *btn =  [KuwoButton buttonWithTitle:@"&lt;#关闭#&gt;" fontSize:16 textColor:UIColorFromRGBAValue(0xffffff, 0.8*255) blk:^(UIButton *sender, UIEvent *event) {
+            @strongify(self);
+            if(!self) return;
+            
+        }];
+        btn.hitTestEdgeInsets = UIEdgeInsetsMake(-10, -10, -10, -10);
+        _&lt;#p_cancelButton#&gt; = btn;
+    }
+    return _&lt;#p_cancelButton#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5887F94A-52D0-4ACC-B791-CF58D1FFF366</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>LazyTextBtn</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

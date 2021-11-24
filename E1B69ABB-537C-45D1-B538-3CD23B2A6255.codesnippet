@@ -3,25 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>available</string>
+	<string>LazyIconFontImage</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>if (@available(iOS &lt;#12.0#&gt;, *)) {
-    &lt;#statements#&gt;
+	<string>@property (nonatomic, strong) UIImageView *&lt;#p_iconAdd#&gt;;
+- (UIImageView *)&lt;#p_iconAdd#&gt; {
+    if(_&lt;#p_iconAdd#&gt; == nil) {
+        _&lt;#p_iconAdd#&gt;= [KWIconFontImageView imageViewWithCode:@"&lt;#&amp;#xe655;#&gt;" size:16 color:g_configUI.colorC3];
+    }
+    return _&lt;#p_iconAdd#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EABDAB9C-966F-4442-B386-DFBAC52FF6D9</string>
+	<string>E1B69ABB-537C-45D1-B538-3CD23B2A6255</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>@available iOS</string>
+	<string>LazyIconFontImage</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
