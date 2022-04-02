@@ -3,25 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>fnblock</string>
+	<string></string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (&lt;#returnType#&gt; (^)(&lt;#parameterTypes#&gt;))&lt;#method name#&gt; {
-    &lt;#code#&gt;
-}</string>
+	<string>    [self checkAndSendAppStartLog:2];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2967221D-E2CF-4AB4-9F96-FABDDC747F4F</string>
+	<string>418CE4D7-1CE9-4871-AC44-79847FA928DC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建一个返回值为block类型的方法</string>
+	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
